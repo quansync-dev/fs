@@ -1,6 +1,6 @@
 {
   "name": "@quansync/fs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "packageManager": "pnpm@10.5.2",
   "description": "Filesystem utilities for Quansync",
   "type": "module",
