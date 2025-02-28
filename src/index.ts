@@ -95,6 +95,11 @@ export const stat = quansync({
   > &
   QuansyncFn<Stats | BigIntStats, [path: PathLike, opts?: StatOptions]>
 
+export const lstat = quansync({
+  sync: (path: PathLike, options) => fs.lstatSync(path, options),
+  async: (path, options) => fs.promises.lstat(path, options),
+}) as typeof stat
+
 /**
  * @link https://nodejs.org/api/fs.html#fspromisescpsrc-dest-options
  */
