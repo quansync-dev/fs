@@ -14,9 +14,16 @@ npm i @quansync/fs
 
 ```ts
 import { readFile } from '@quansync/fs'
+import { quansync } from 'quansync'
 
 const resultAsync = await readFile('/path', 'utf8')
 const resultSync = readFile.sync('/path', 'utf8')
+
+const readFileTrimmed = quansync(function* (id: string) {
+  const text = yield* readFile(id, 'utf8').trim()
+  return text
+})
+const readFileTrimmedSync = readFileTrimmed.sync
 ```
 
 ## Sponsors
