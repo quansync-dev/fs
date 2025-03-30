@@ -1,7 +1,7 @@
 {
   "name": "@quansync/fs",
   "version": "0.1.1",
-  "packageManager": "pnpm@10.5.2",
+  "packageManager": "pnpm@10.7.0",
   "description": "Filesystem utilities for Quansync",
   "type": "module",
   "license": "MIT",
@@ -40,20 +40,20 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "quansync": "^0.2.8"
+    "quansync": "^0.2.10"
   },
   "devDependencies": {
-    "@sxzz/eslint-config": "^5.2.0",
-    "@sxzz/prettier-config": "^2.2.0",
-    "@types/node": "^22.13.9",
-    "bumpp": "^10.0.3",
-    "eslint": "^9.21.0",
-    "oxc-transform": "^0.55.0",
+    "@sxzz/eslint-config": "^6.1.0",
+    "@sxzz/prettier-config": "^2.2.1",
+    "@types/node": "^22.13.14",
+    "bumpp": "^10.1.0",
+    "eslint": "^9.23.0",
+    "oxc-transform": "^0.61.2",
     "prettier": "^3.5.3",
-    "tsdown": "^0.6.2",
+    "tsdown": "^0.6.10",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2",
-    "vitest": "^3.0.7"
+    "vitest": "^3.0.9"
   },
   "engines": {
     "node": ">=20.0.0"
