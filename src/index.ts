@@ -203,6 +203,17 @@ export const readdir = quansync({
         recursive?: boolean | undefined
       },
     ]
+  > &
+  QuansyncFn<
+    Dirent<Buffer>[],
+    [
+      path: PathLike,
+      options: {
+        encoding: 'buffer'
+        withFileTypes: true
+        recursive?: boolean | undefined
+      },
+    ]
   >
 
 /**
