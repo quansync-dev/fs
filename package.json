@@ -54,8 +54,5 @@
     "typescript": "^5.9.2",
     "vitest": "^3.2.4"
   },
-  "engines": {
-    "node": ">=20.0.0"
-  },
   "prettier": "@sxzz/prettier-config"
 }
