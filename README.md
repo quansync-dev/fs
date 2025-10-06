@@ -1,6 +1,8 @@
-# @quansync/fs [![npm](https://img.shields.io/npm/v/@quansync/fs.svg)](https://npmjs.com/package/@quansync/fs)
+# @quansync/fs
 
-[![Unit Test](https://github.com/quansync-dev/fs/actions/workflows/unit-test.yml/badge.svg)](https://github.com/quansync-dev/fs/actions/workflows/unit-test.yml)
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![Unit Test][unit-test-src]][unit-test-href]
 
 Filesystem utilities for [quansync](https://github.com/quansync-dev/quansync).
 
@@ -36,4 +38,13 @@ const readFileTrimmedSync = readFileTrimmed.sync
 
 ## License
 
-[MIT](./LICENSE) License © 2025 [三咲智子 Kevin Deng](https://github.com/sxzz)
+[MIT](./LICENSE) License © 2025-PRESENT [Kevin Deng](https://github.com/sxzz)
+
+<!-- Badges -->
+
+[npm-version-src]: https://img.shields.io/npm/v/@quansync/fs.svg
+[npm-version-href]: https://npmjs.com/package/@quansync/fs
+[npm-downloads-src]: https://img.shields.io/npm/dm/@quansync/fs
+[npm-downloads-href]: https://www.npmcharts.com/compare/@quansync/fs?interval=30
+[unit-test-src]: https://github.com/quansync-dev/fs/actions/workflows/unit-test.yml/badge.svg
+[unit-test-href]: https://github.com/quansync-dev/fs/actions/workflows/unit-test.yml
