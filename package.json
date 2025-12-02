@@ -1,30 +1,30 @@
 {
   "name": "@quansync/fs",
-  "version": "0.1.5",
-  "packageManager": "pnpm@10.18.1",
-  "description": "Filesystem utilities for Quansync",
   "type": "module",
+  "version": "0.1.5",
+  "packageManager": "pnpm@10.24.0",
+  "description": "Filesystem utilities for Quansync",
+  "author": "Kevin Deng <sxzz@sxzz.moe>",
   "license": "MIT",
+  "funding": "https://github.com/sponsors/sxzz",
   "homepage": "https://github.com/quansync-dev/fs#readme",
-  "bugs": {
-    "url": "https://github.com/quansync-dev/fs/issues"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/quansync-dev/fs.git"
   },
-  "author": "Kevin Deng <sxzz@sxzz.moe>",
-  "funding": "https://github.com/sponsors/sxzz",
+  "bugs": {
+    "url": "https://github.com/quansync-dev/fs/issues"
+  },
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
   "files": [
     "dist"
   ],
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": "./dist/index.js",
-    "./package.json": "./package.json"
-  },
   "publishConfig": {
     "access": "public"
   },
@@ -34,7 +34,7 @@
     "build": "tsdown",
     "dev": "tsdown --watch",
     "test": "vitest",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsgo --noEmit",
     "format": "prettier --cache --write .",
     "release": "bumpp",
     "prepublishOnly": "pnpm run build"
@@ -43,16 +43,17 @@
     "quansync": "^0.2.11"
   },
   "devDependencies": {
-    "@sxzz/eslint-config": "^7.2.7",
-    "@sxzz/prettier-config": "^2.2.4",
-    "@types/node": "^24.7.0",
-    "bumpp": "^10.3.1",
-    "eslint": "^9.37.0",
-    "prettier": "^3.6.2",
-    "tsdown": "^0.15.6",
-    "tsx": "^4.20.6",
+    "@sxzz/eslint-config": "^7.4.1",
+    "@sxzz/prettier-config": "^2.2.6",
+    "@types/node": "^24.10.1",
+    "@typescript/native-preview": "7.0.0-dev.20251202.1",
+    "bumpp": "^10.3.2",
+    "eslint": "^9.39.1",
+    "prettier": "^3.7.3",
+    "tsdown": "^0.17.0-beta.5",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "vitest": "^3.2.4"
+    "vitest": "^4.0.15"
   },
   "prettier": "@sxzz/prettier-config"
 }
