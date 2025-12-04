@@ -40,7 +40,7 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "quansync": "^0.3.0"
+    "quansync": "^1.0.0"
   },
   "devDependencies": {
     "@sxzz/eslint-config": "^7.4.1",
