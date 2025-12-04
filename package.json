@@ -1,7 +1,7 @@
 {
   "name": "@quansync/fs",
   "type": "module",
-  "version": "0.1.6",
+  "version": "1.0.0",
   "packageManager": "pnpm@10.24.0",
   "description": "Filesystem utilities for Quansync",
   "author": "Kevin Deng <sxzz@sxzz.moe>",
