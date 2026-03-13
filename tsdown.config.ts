@@ -1,6 +1,3 @@
-import { defineConfig } from 'tsdown'
+import { nodeLib } from 'tsdown-preset-sxzz'
 
-export default defineConfig({
-  exports: true,
-  inlineOnly: [],
-})
+export default nodeLib()
