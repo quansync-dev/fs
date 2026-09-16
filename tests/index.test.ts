@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest'
-import { access, readdir, readFile } from '../src'
+import { access, readdir, readFile } from '../src/index.ts'
 
 test('readFile', async () => {
   const resultAsync = readFile(import.meta.filename, 'utf8')
